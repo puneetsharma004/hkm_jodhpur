@@ -11,8 +11,8 @@ import Volunteer from './pages/Volunteer';
 import Loader from './components/common/Loader';
 import Layout from './components/Layout.jsx';
 
-
 function App() {
+
   return (
     <Router>
       {/* Layout wraps everything - header, footer, announcement will show on all pages */}

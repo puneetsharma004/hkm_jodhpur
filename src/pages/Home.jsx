@@ -10,6 +10,7 @@ import QuickLinks from '../components/common/QuickLinks';
 import Announcements from '../components/common/AnnouncementBar';
 
 function Home() {
+  
   return (
     <>
       {/* Loader: Optional global or page-specific */}

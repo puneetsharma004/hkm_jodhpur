@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
+import { FaHandHoldingHeart } from 'react-icons/fa';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,6 +36,21 @@ export default function Header() {
       return location.pathname === '/';
     }
     return location.pathname.startsWith(href);
+  };
+
+  // Function to handle navigation with smooth scroll to top
+  const handleNavigation = (path) => {
+    if (location.pathname !== path) {
+      navigate(path);
+      // Smooth scroll to top when navigating to a new page
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
+    } else {
+      // If on the same page, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -145,7 +161,7 @@ export default function Header() {
             <motion.button 
               className="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-1"
               style={{ 
-                background: 'linear-gradient(135deg, #FFD700 0%, #FF9933 100%)',
+                background: 'linear-gradient(135deg, #FFD700  0%, #F4C430   100%)',
                 color: '#003366'
               }}
               initial={{ opacity: 0, scale: 0.8 }}
@@ -157,7 +173,7 @@ export default function Header() {
               }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="text-xs">🙏</span>
+              <span className="text-xs"><FaHandHoldingHeart /></span>
               <span className="hidden sm:inline">Donate</span>
             </motion.button>
 
