@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* Custom Jodhpur Temple Colors & Classes */
+:root {
+  --jodhpur-blue: #003366;
+  --saffron: #FF9933;
+  --gold: #FFD700;
+  --temple-cream: #FFF8DC;
+  --deep-orange: #FF6600;
+}
+
+/* Background Colors */
+.bg-jodhpur-blue {
+  background-color: var(--jodhpur-blue);
+}
+
+.bg-saffron {
+  background-color: var(--saffron);
+}
+
+.bg-gold {
+  background-color: var(--gold);
+}
+
+.bg-temple-cream {
+  background-color: var(--temple-cream);
+}
+
+.bg-deep-orange {
+  background-color: var(--deep-orange);
+}
+
+/* Text Colors */
+.text-jodhpur-blue {
+  color: var(--jodhpur-blue);
+}
+
+.text-saffron {
+  color: var(--saffron);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.text-temple-cream {
+  color: var(--temple-cream);
+}
+
+.text-deep-orange {
+  color: var(--deep-orange);
+}
+
+/* Border Colors */
+.border-jodhpur-blue {
+  border-color: var(--jodhpur-blue);
+}
+
+.border-saffron {
+  border-color: var(--saffron);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+/* Custom Font Sizes */
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-large {
+  font-size: 1.5rem;
+}
+
+.text-xlarge {
+  font-size: 2.5rem;
+}
+
+/* Custom Spacing */
+.p-xs { padding: 4px; }
+.p-sm { padding: 8px; }
+.p-md { padding: 16px; }
+.p-lg { padding: 32px; }
+.p-xl { padding: 64px; }
+
+.m-xs { margin: 4px; }
+.m-sm { margin: 8px; }
+.m-md { margin: 16px; }
+.m-lg { margin: 32px; }
+.m-xl { margin: 64px; }
+
+/* Temple-specific gradient backgrounds */
+.bg-temple-gradient {
+  background: linear-gradient(135deg, var(--jodhpur-blue) 0%, var(--saffron) 100%);
+}
+
+.bg-saffron-gradient {
+  background: linear-gradient(135deg, var(--saffron) 0%, var(--gold) 100%);
+}
+
+/* Hover effects for temple theme */
+.hover-saffron:hover {
+  color: var(--saffron);
+  transition: color 0.3s ease;
+}
+
+.hover-gold:hover {
+  color: var(--gold);
+  transition: color 0.3s ease;
+}
+
+/* Add to your index.css */
+.glow {
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+.glow-button {
+  filter: drop-shadow(0 0 15px rgba(255, 153, 51, 0.5));
+}
+
+.glow-button:hover {
+  filter: drop-shadow(0 0 25px rgba(255, 153, 51, 0.8));
+}
+
+
+/* Add to your index.css */
+.gradient-text {
+  background: linear-gradient(to right, var(--saffron), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(255, 153, 51, 0.3));
+}
+
+.gradient-text-saffron-gold {
+  background: linear-gradient(to right, #FF9933, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(255, 153, 51, 0.3));
+}
