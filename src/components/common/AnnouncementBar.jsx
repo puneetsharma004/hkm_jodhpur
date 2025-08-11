@@ -57,7 +57,7 @@ export default function Announcements() {
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: -100, opacity: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="relative z-50 overflow-hidden"
+      className="relative z-30 overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -175,56 +175,6 @@ export default function Announcements() {
 
             {/* Right Section */}
             <div className="flex items-center space-x-3">
-              
-              {/* Progress Bar */}
-              <div className="hidden lg:block">
-                <div className="w-20 h-1 bg-jodhpur-blue bg-opacity-30 rounded-full overflow-hidden">
-                  <motion.div
-                    className="h-full bg-jodhpur-blue rounded-full"
-                    initial={{ width: "0%" }}
-                    animate={{ width: "100%" }}
-                    transition={{ 
-                      duration: 5,
-                      ease: "linear",
-                      repeat: Infinity
-                    }}
-                    key={currentAnnouncement}
-                  />
-                </div>
-              </div>
-
-              {/* Dots Indicator */}
-              {announcements.length > 1 && (
-                <div className="hidden sm:flex items-center space-x-2">
-                  {announcements.map((_, index) => (
-                    <motion.button
-                      key={index}
-                      onClick={() => setCurrentAnnouncement(index)}
-                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        index === currentAnnouncement 
-                          ? 'bg-jodhpur-blue scale-125' 
-                          : 'bg-jodhpur-blue bg-opacity-50 hover:bg-opacity-80'
-                      }`}
-                      whileHover={{ scale: 1.3 }}
-                      whileTap={{ scale: 0.9 }}
-                      aria-label={`Go to announcement ${index + 1}`}
-                    />
-                  ))}
-                </div>
-              )}
-
-              {/* Pause/Play Button */}
-              <motion.button
-                onClick={() => setIsPaused(!isPaused)}
-                className="p-2 rounded-full text-jodhpur-blue hover:bg-jodhpur-blue hover:bg-opacity-10 transition-all duration-300"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                aria-label={isPaused ? "Resume announcements" : "Pause announcements"}
-              >
-                <span className="text-sm">
-                  {isPaused ? '▶️' : '⏸️'}
-                </span>
-              </motion.button>
 
               {/* Close Button */}
               <motion.button

@@ -70,7 +70,7 @@ export default function Testimonials() {
             <div className="h-px bg-gradient-to-r from-transparent via-saffron to-transparent w-24"></div>
           </div>
           
-          <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-saffron to-gold bg-clip-text text-transparent mb-4">
+          <h3 className="text-3xl md:text-4xl font-bold gradient-text-saffron-gold mb-4">
             What Devotees Say
           </h3>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">

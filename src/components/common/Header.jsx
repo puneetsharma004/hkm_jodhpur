@@ -48,10 +48,10 @@ export default function Header() {
           : 'bg-white/95 shadow-md'
       }`}
       style={{ 
-        backgroundColor: isScrolled ? '#003366' : 'rgba(255, 255, 255, 0.95)'
+        backgroundColor: isScrolled ? '#441474' : 'rgba(255, 255, 255, 0.95)'
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-[1000]">
         <div className="flex items-center justify-between h-16">
           
           {/* Logo & Title */}

@@ -36,13 +36,7 @@ export default function GalleryPreview() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="flex justify-center items-center mb-6">
-            <div className="h-px bg-gradient-to-r from-transparent via-saffron to-transparent w-24"></div>
-            <span className="mx-4 text-4xl animate-pulse">📸</span>
-            <div className="h-px bg-gradient-to-r from-transparent via-saffron to-transparent w-24"></div>
-          </div>
-          
-          <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-saffron to-gold bg-clip-text text-transparent mb-4">
+          <h3 className="text-3xl md:text-4xl font-bold gradient-text-saffron-gold mb-4">
             Temple Gallery
           </h3>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
