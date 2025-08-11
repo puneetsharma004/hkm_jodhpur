@@ -104,7 +104,7 @@ export default function QuickLinks() {
                 
                 {/* Icon Container */}
                 <div className="flex justify-center mb-4">
-                  <div className={`bg-gradient-to-r ${link.color} p-4 rounded-full shadow-xl group-hover:shadow-2xl transition-shadow duration-300 group-hover:scale-110 transform transition-transform duration-300`}>
+                  <div className={`bg-gradient-to-r ${link.color} p-4 rounded-full shadow-xl group-hover:shadow-2xl transition-shadow duration-300 group-hover:scale-110 transform `}>
                     <div className="text-white">
                       {link.icon}
                     </div>
