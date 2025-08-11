@@ -9,6 +9,8 @@ import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import Volunteer from './pages/Volunteer';
 import Loader from './components/common/Loader';
+import Layout from './components/Layout.jsx';
+
 
 function App() {
   return (
