@@ -197,7 +197,7 @@ export default function Footer() {
                   className="flex items-center gap-2 py-1 px-2 rounded-md transition-all hover:bg-purple-800/30"
                   variants={itemVariants}
                   whileHover="hover"
-                  // variants={linkVariants}
+                  linkVariants={linkVariants}
                 >
                   <motion.span
                     whileHover={{ rotate: 10, scale: 1.1 }}
@@ -235,7 +235,7 @@ export default function Footer() {
                   className="flex items-center gap-2 py-1 px-2 rounded-md transition-all hover:bg-purple-800/30"
                   variants={itemVariants}
                   whileHover="hover"
-                  // variants={linkVariants}
+                  linkVariants={linkVariants}
                 >
                   <motion.span
                     whileHover={{ rotate: 10, scale: 1.1 }}
@@ -308,7 +308,7 @@ export default function Footer() {
                     variants={itemVariants}
                     whileHover="hover"
                     whileTap="tap"
-                    // variants={socialIconVariants}
+                    linkVariants={socialIconVariants}
                   >
                     <social.icon className="text-sm" />
                   </motion.a>
