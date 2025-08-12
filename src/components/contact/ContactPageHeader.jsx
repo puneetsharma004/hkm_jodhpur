@@ -77,7 +77,7 @@ export default function ContactPageHeader() {
         >
           {[
             { icon: '📞', method: 'Call Us', detail: '+91 98765 43210' },
-            { icon: '📧', method: 'Email Us', detail: 'info@marwarmandir.org' },
+            { icon: '📧', method: 'Email Us', detail: 'info@Marwadmandir.org' },
             { icon: '💬', method: 'WhatsApp', detail: 'Quick Response' },
             { icon: '📍', method: 'Visit Us', detail: 'Jodhpur, Rajasthan' }
           ].map((contact, index) => (

@@ -39,7 +39,7 @@ export default function WelcomeSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Welcome to 
             <span className="block gradient-text-saffron-gold mt-2">
-  Hare Krishna Marwar Mandir
+  Hare Krishna Marwad Mandir
 </span>
 
             <span className="block text-2xl md:text-3xl font-medium text-purple-300 mt-2">Jodhpur</span>
@@ -58,7 +58,7 @@ export default function WelcomeSection() {
           <div className="mb-8">
             <p className="text-lg md:text-xl leading-relaxed text-gray-100 mb-6">
               Nestled in the heart of the <span className="font-semibold text-cyan-300 glow">Blue City</span>, our temple is a beacon of devotion, heritage, and spiritual bliss. 
-              Part of the <span className="font-semibold text-saffron glow">ISKCON family</span>, the Hare Krishna Marwar Mandir offers daily darshan, cultural events, and a warm welcome to all.
+              Part of the <span className="font-semibold text-saffron glow">ISKCON family</span>, the Hare Krishna Marwad Mandir offers daily darshan, cultural events, and a warm welcome to all.
             </p>
 
             {/* Decorative Quote Container */}

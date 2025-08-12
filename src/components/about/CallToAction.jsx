@@ -161,7 +161,7 @@ export default function CallToAction() {
               <div className="space-y-2 text-gray-300">
                 <p>📍 123 Temple Road, Jodhpur</p>
                 <p>📞 +91 98765 43210</p>
-                <p>✉️ info@marwarmandir.org</p>
+                <p>✉️ info@Marwadmandir.org</p>
               </div>
             </div>
           </div>

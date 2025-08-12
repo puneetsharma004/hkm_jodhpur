@@ -140,7 +140,7 @@ export default function Footer() {
                 <FaOm className="text-2xl" />
               </motion.div>
               <span className="bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
-                Hare Krishna Marwar Mandir
+                Hare Krishna Marwad Mandir
               </span>
             </motion.h3>
             
@@ -151,7 +151,7 @@ export default function Footer() {
               {[
                 { icon: FaLocationDot, text: "123 Temple Road, Jodhpur, Rajasthan" },
                 { icon: FaPhone, text: "+91 98765 43210" },
-                { icon: FaEnvelope, text: "info@marwarmandir.org" }
+                { icon: FaEnvelope, text: "info@Marwadmandir.org" }
               ].map((item, index) => (
                 <motion.p 
                   key={index}
@@ -358,7 +358,7 @@ export default function Footer() {
             variants={containerVariants}
           >
             <motion.div className="mb-2 md:mb-0" variants={itemVariants}>
-              <p>© {currentYear} Hare Krishna Marwar Mandir. All rights reserved.</p>
+              <p>© {currentYear} Hare Krishna Marwad Mandir. All rights reserved.</p>
             </motion.div>
             <motion.div 
               className="flex items-center space-x-1"

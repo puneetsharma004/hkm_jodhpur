@@ -52,7 +52,7 @@ export default function CulturalImportance() {
             Cultural Importance
           </h2>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            A cornerstone of spiritual and cultural life in Jodhpur's Marwar region
+            A cornerstone of spiritual and cultural life in Jodhpur's Marwad region
           </p>
         </motion.div>
 
@@ -68,7 +68,7 @@ export default function CulturalImportance() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-4 text-gray-200 leading-relaxed">
               <p>
-                For over two decades, the Hare Krishna Marwar Mandir has served as the spiritual and cultural heart of Jodhpur's devotional community. Our temple plays a vital role in preserving the rich heritage of the Marwar region while fostering spiritual growth and community unity.
+                For over two decades, the Hare Krishna Marwad Mandir has served as the spiritual and cultural heart of Jodhpur's devotional community. Our temple plays a vital role in preserving the rich heritage of the Marwad region while fostering spiritual growth and community unity.
               </p>
               <p>
                 We host numerous festivals that bring together people from all walks of life, creating bridges between different communities and promoting the universal message of love and peace that Lord Krishna represents.

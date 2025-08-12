@@ -23,7 +23,7 @@ export default function VisitorContact() {
     {
       title: 'Email Assistance',
       description: 'Detailed information and booking support',
-      contact: 'visitors@marwarmandir.org',
+      contact: 'visitors@Marwadmandir.org',
       hours: 'Response within 24 hours',
       icon: '📧',
       color: 'from-blue-500 to-cyan-600',

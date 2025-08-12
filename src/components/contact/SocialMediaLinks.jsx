@@ -8,7 +8,7 @@ export default function SocialMediaLinks() {
       color: 'from-blue-600 to-blue-700',
       followers: '25K',
       description: 'Daily updates, events, and community posts',
-      url: 'https://facebook.com/marwarmandir',
+      url: 'https://facebook.com/Marwadmandir',
       posts: 'Daily'
     },
     {
@@ -17,7 +17,7 @@ export default function SocialMediaLinks() {
       color: 'from-pink-500 to-purple-600',
       followers: '18K',
       description: 'Beautiful temple photos and devotional moments',
-      url: 'https://instagram.com/marwarmandir',
+      url: 'https://instagram.com/Marwadmandir',
       posts: 'Multiple daily'
     },
     {
@@ -26,7 +26,7 @@ export default function SocialMediaLinks() {
       color: 'from-red-500 to-red-600',
       followers: '12K',
       description: 'Live aarti, lectures, and spiritual videos',
-      url: 'https://youtube.com/@marwarmandir',
+      url: 'https://youtube.com/@Marwadmandir',
       posts: 'Weekly'
     },
     {
@@ -35,7 +35,7 @@ export default function SocialMediaLinks() {
       color: 'from-sky-400 to-sky-500',
       followers: '8K',
       description: 'Quick updates, thoughts, and announcements',
-      url: 'https://twitter.com/marwarmandir',
+      url: 'https://twitter.com/Marwadmandir',
       posts: 'Regular'
     },
     {
@@ -53,7 +53,7 @@ export default function SocialMediaLinks() {
       color: 'from-blue-400 to-blue-500',
       followers: '3K',
       description: 'Spiritual quotes and daily inspiration',
-      url: 'https://t.me/marwarmandir',
+      url: 'https://t.me/Marwadmandir',
       posts: 'Daily quotes'
     }
   ];

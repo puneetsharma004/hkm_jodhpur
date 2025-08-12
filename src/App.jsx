@@ -26,7 +26,7 @@ function App() {
           gestureOrientation: 'vertical',
           smoothWheel: true,
           wheelMultiplier: 1,
-          smoothTouch: false, // Keep mobile touch normal
+          smoothTouch: true, // Keep mobile touch normal
           touchMultiplier: 2,
         }}>
       <Layout>

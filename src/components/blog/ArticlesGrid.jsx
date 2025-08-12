@@ -30,7 +30,7 @@ export default function ArticlesGrid() {
     },
     {
       id: 3,
-      title: 'The History of Hare Krishna Marwar Mandir',
+      title: 'The History of Hare Krishna Marwad Mandir',
       excerpt: 'Discover the inspiring journey of how our temple was established and grew into a spiritual center...',
       image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop',
       author: 'Historian Govind Das',

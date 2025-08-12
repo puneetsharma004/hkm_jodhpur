@@ -156,7 +156,7 @@ export default function QuickLinks() {
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <span>📧</span>
-                <span>Email: info@marwarmandir.org</span>
+                <span>Email: info@Marwadmandir.org</span>
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <span>📱</span>

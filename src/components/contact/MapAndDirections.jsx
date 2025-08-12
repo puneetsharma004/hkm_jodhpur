@@ -110,7 +110,7 @@ export default function MapAndDirections() {
               <div className="p-6 bg-gradient-to-r from-gray-800/50 to-gray-900/50">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-bold text-white text-lg">Hare Krishna Marwar Mandir</h3>
+                    <h3 className="font-bold text-white text-lg">Hare Krishna Marwad Mandir</h3>
                     <p className="text-gray-400 text-sm">Sector 12, Near Blue City Mall, Jodhpur</p>
                   </div>
                   <div className="flex space-x-3">

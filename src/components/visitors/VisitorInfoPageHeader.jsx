@@ -52,7 +52,7 @@ export default function VisitorInfoPageHeader() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
-            Plan Your Visit to Hare Krishna Marwar Mandir, Jodhpur
+            Plan Your Visit to Hare Krishna Marwad Mandir, Jodhpur
           </p>
           
           <motion.div

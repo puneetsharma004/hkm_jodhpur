@@ -243,7 +243,7 @@ export default function DonationsCallToAction() {
               Send us your questions and we'll get back to you within 24 hours.
             </p>
             <button className="text-saffron hover:text-gold transition-colors duration-300 font-semibold">
-              donations@marwarmandir.org
+              donations@Marwadmandir.org
             </button>
           </div>
         </motion.div>

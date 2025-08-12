@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 export default function TempleArchitecture() {
   const architecturalFeatures = [
     {
-      title: 'Marwar Style Domes',
+      title: 'Marwad Style Domes',
       description: 'Traditional Rajasthani architectural elements with intricate carvings',
       icon: '🏛️',
       image: 'https://images.unsplash.com/photo-1574401572222-9e4c2b6b5e4c?w=400&h=300&fit=crop'
@@ -63,7 +63,7 @@ export default function TempleArchitecture() {
             Temple Architecture
           </h2>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            A magnificent blend of traditional Marwar architecture and sacred temple design
+            A magnificent blend of traditional Marwad architecture and sacred temple design
           </p>
         </motion.div>
 
@@ -80,7 +80,7 @@ export default function TempleArchitecture() {
               <h3 className="text-2xl font-bold text-saffron mb-6">Architectural Heritage</h3>
               <div className="space-y-4 text-gray-200 leading-relaxed">
                 <p>
-                  Our temple stands as a testament to the rich architectural heritage of Rajasthan, seamlessly blending traditional Marwar design principles with sacred Vedic temple architecture.
+                  Our temple stands as a testament to the rich architectural heritage of Rajasthan, seamlessly blending traditional Marwad design principles with sacred Vedic temple architecture.
                 </p>
                 <p>
                   The structure incorporates the distinctive blue hues of Jodhpur, earning its place as a spiritual jewel in the Blue City. Intricate stone carvings, traditional jharokhas (overhanging enclosed balconies), and ornate domes create a visual symphony that reflects both devotion and cultural pride.

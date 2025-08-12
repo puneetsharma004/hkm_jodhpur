@@ -186,7 +186,7 @@ export default function VolunteerRegistrationForm() {
               <div className="text-4xl mb-2">❌</div>
               <h3 className="text-red-300 font-bold mb-2">Registration Failed</h3>
               <p className="text-gray-300 text-sm">
-                Please try again or contact us directly at volunteer@marwarmandir.org
+                Please try again or contact us directly at volunteer@Marwadmandir.org
               </p>
             </motion.div>
           )}

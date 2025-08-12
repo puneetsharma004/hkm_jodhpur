@@ -100,7 +100,7 @@ export default function VisitorInfoCallToAction() {
           </h2>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto">
-            Experience divine peace and spiritual joy at the Hare Krishna Marwar Mandir. 
+            Experience divine peace and spiritual joy at the Hare Krishna Marwad Mandir. 
             Your journey to Krishna consciousness begins here.
           </p>
 

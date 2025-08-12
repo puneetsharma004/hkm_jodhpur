@@ -52,7 +52,7 @@ export default function GalleryPageHeader() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
-            A Visual Journey Through the Hare Krishna Marwar Mandir
+            A Visual Journey Through the Hare Krishna Marwad Mandir
           </p>
           
           <motion.div

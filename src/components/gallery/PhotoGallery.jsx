@@ -36,7 +36,7 @@ export default function PhotoGallery() {
       src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
       category: 'architecture',
       title: 'Temple Main Hall',
-      description: 'Beautiful Marwar style architecture',
+      description: 'Beautiful Marwad style architecture',
       date: '2023'
     },
     {

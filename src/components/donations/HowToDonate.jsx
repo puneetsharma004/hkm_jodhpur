@@ -32,7 +32,7 @@ export default function HowToDonate() {
   ];
 
   const bankDetails = {
-    accountName: 'Hare Krishna Marwar Mandir Trust',
+    accountName: 'Hare Krishna Marwad Mandir Trust',
     accountNumber: '123456789012',
     ifscCode: 'SBIN0001234',
     bankName: 'State Bank of India',

@@ -52,7 +52,7 @@ export default function BlogPageHeader() {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
-            Insights, Teachings, and Stories from Hare Krishna Marwar Mandir
+            Insights, Teachings, and Stories from Hare Krishna Marwad Mandir
           </p>
           
           <motion.div

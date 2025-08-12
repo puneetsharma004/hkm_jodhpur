@@ -60,14 +60,28 @@ export default function Header() {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`sticky top-0 z-40 transition-all duration-300 ${
         isScrolled 
-          ? 'shadow-xl backdrop-blur-md' 
+          ? 'shadow-xl backdrop-blur-md top-[.35rem]' 
           : 'bg-white/95 shadow-md'
       }`}
       style={{ 
-        backgroundColor: isScrolled ? '#441474' : 'rgba(255, 255, 255, 0.95)'
+        backgroundColor: isScrolled ? '#441474' : 'rgba(255, 255, 255, 0.95)',
+        marginRight: isScrolled ? '1rem' : '0',
+        marginLeft: isScrolled ? '1rem' : '0',
+        marginRight: isScrolled ? '1rem' : '0',
+        borderRadius: isScrolled ? '1rem' : '0', // Rounded only when scrolled
+        boxShadow: isScrolled
+          ? '0 8px 20px rgba(0,0,0,0.2)'
+          : '0 2px 4px rgba(0,0,0,0.05)',
+        transition: 'all 0.3s ease'
       }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-[1000]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-[1000]"
+        style={{
+        transition: 'padding 0.3s ease',
+        paddingLeft: isScrolled ? '2rem' : '1rem',
+        paddingRight: isScrolled ? '2rem' : '1rem'
+      }}
+      >
         <div className="flex items-center justify-between h-16">
           
           {/* Logo & Title */}
@@ -86,7 +100,7 @@ export default function Header() {
             </motion.div>
             <div>
               <motion.h1 
-                className={`text-lg font-bold transition-colors duration-300 ${
+                className={`text-lg font-bold transition-colors duration-300 hidden md:block${
                   isScrolled ? 'text-white' : ''
                 }`}
                 style={{ 
@@ -96,7 +110,7 @@ export default function Header() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                Marwar Mandir
+                Marwad Mandir
               </motion.h1>
             </div>
           </motion.div>
@@ -174,7 +188,7 @@ export default function Header() {
               whileTap={{ scale: 0.95 }}
             >
               <span className="text-xs"><FaHandHoldingHeart /></span>
-              <span className="hidden sm:inline">Donate</span>
+              <span>Donate</span>
             </motion.button>
 
             {/* Mobile Menu Toggle */}

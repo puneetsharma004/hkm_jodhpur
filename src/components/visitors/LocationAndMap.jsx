@@ -5,7 +5,7 @@ export default function LocationAndMap() {
   const [mapLoaded, setMapLoaded] = useState(false);
 
   const templeLocation = {
-    address: 'Hare Krishna Marwar Mandir, Sector 12, Near Blue City Mall, Jodhpur, Rajasthan 342001, India',
+    address: 'Hare Krishna Marwad Mandir, Sector 12, Near Blue City Mall, Jodhpur, Rajasthan 342001, India',
     gpsCoordinates: '26.2863° N, 73.0392° E',
     landmark: 'Near Blue City Mall, Opposite City Hospital',
     pincode: '342001',
@@ -91,7 +91,7 @@ export default function LocationAndMap() {
               <div className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-bold text-white mb-1">Hare Krishna Marwar Mandir</h3>
+                    <h3 className="font-bold text-white mb-1">Hare Krishna Marwad Mandir</h3>
                     <p className="text-gray-400 text-sm">{templeLocation.landmark}</p>
                   </div>
                   <motion.button
@@ -137,7 +137,7 @@ export default function LocationAndMap() {
                   <span className="text-2xl">🏛️</span>
                   <div>
                     <div className="font-semibold text-white">Temple Name</div>
-                    <div className="text-gray-300">Hare Krishna Marwar Mandir</div>
+                    <div className="text-gray-300">Hare Krishna Marwad Mandir</div>
                   </div>
                 </div>
                 

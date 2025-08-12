@@ -62,10 +62,10 @@ export default function TempleHistory() {
               <h3 className="text-2xl font-bold text-saffron mb-4">Our Sacred Beginning</h3>
               <div className="space-y-4 text-gray-200 leading-relaxed">
                 <p>
-                  In the heart of Jodhpur, the Blue City of Rajasthan, our temple stands as a beacon of spiritual light. Founded in 1985 by devoted disciples of the ISKCON movement, the Hare Krishna Marwar Mandir was established with a vision to spread the message of Lord Krishna in the land of the Maharajas.
+                  In the heart of Jodhpur, the Blue City of Rajasthan, our temple stands as a beacon of spiritual light. Founded in 1985 by devoted disciples of the ISKCON movement, the Hare Krishna Marwad Mandir was established with a vision to spread the message of Lord Krishna in the land of the Maharajas.
                 </p>
                 <p>
-                  The temple's foundation was blessed by senior spiritual leaders who recognized Jodhpur's strategic importance in connecting the ancient wisdom of Krishna consciousness with the rich cultural heritage of Marwar region.
+                  The temple's foundation was blessed by senior spiritual leaders who recognized Jodhpur's strategic importance in connecting the ancient wisdom of Krishna consciousness with the rich cultural heritage of Marwad region.
                 </p>
                 <p>
                   Over the decades, our temple has grown from a small meditation hall to a magnificent complex that serves thousands of devotees daily, while preserving the authentic traditions of bhakti yoga and Vedic culture.

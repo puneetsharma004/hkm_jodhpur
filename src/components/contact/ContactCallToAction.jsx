@@ -38,7 +38,7 @@ export default function ContactCallToAction() {
     },
     {
       method: 'Send an Email',
-      detail: 'info@marwarmandir.org',
+      detail: 'info@Marwadmandir.org',
       description: 'Detailed inquiries and official communication',
       icon: '📧',
       action: 'Email Us'

@@ -7,7 +7,7 @@ export default function ContactInformation() {
       icon: '📍',
       color: 'from-blue-500 to-cyan-600',
       details: [
-        { label: 'Full Address', value: 'Hare Krishna Marwar Mandir, Sector 12, Near Blue City Mall, Jodhpur, Rajasthan - 342001, India' },
+        { label: 'Full Address', value: 'Hare Krishna Marwad Mandir, Sector 12, Near Blue City Mall, Jodhpur, Rajasthan - 342001, India' },
         { label: 'Nearest Landmark', value: 'Blue City Mall, Opposite City Hospital' },
         { label: 'Pin Code', value: '342001' },
         { label: 'GPS Coordinates', value: '26.2863° N, 73.0392° E' }
@@ -29,17 +29,17 @@ export default function ContactInformation() {
       icon: '📧',
       color: 'from-purple-500 to-pink-600',
       details: [
-        { label: 'General Information', value: 'info@marwarmandir.org' },
-        { label: 'Donations & Seva', value: 'donations@marwarmandir.org' },
-        { label: 'Volunteer Opportunities', value: 'volunteer@marwarmandir.org' },
-        { label: 'Media & Press', value: 'media@marwarmandir.org' }
+        { label: 'General Information', value: 'info@Marwadmandir.org' },
+        { label: 'Donations & Seva', value: 'donations@Marwadmandir.org' },
+        { label: 'Volunteer Opportunities', value: 'volunteer@Marwadmandir.org' },
+        { label: 'Media & Press', value: 'media@Marwadmandir.org' }
       ]
     }
   ];
 
   const quickActions = [
     { action: 'Call Now', icon: '📞', color: 'bg-green-600', number: '+91 98765 43210' },
-    { action: 'Send Email', icon: '📧', color: 'bg-blue-600', email: 'info@marwarmandir.org' },
+    { action: 'Send Email', icon: '📧', color: 'bg-blue-600', email: 'info@Marwadmandir.org' },
     { action: 'WhatsApp', icon: '💬', color: 'bg-green-500', number: '+91 98765 43211' },
     { action: 'Get Directions', icon: '🗺️', color: 'bg-purple-600', link: '#map' }
   ];

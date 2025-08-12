@@ -303,7 +303,7 @@ export default function ContactForm() {
               whileTap={{ scale: 0.95 }}
             >
               <span>📧</span>
-              <span>Email: info@marwarmandir.org</span>
+              <span>Email: info@Marwadmandir.org</span>
             </motion.button>
             <motion.button
               className="px-6 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 flex items-center space-x-2"

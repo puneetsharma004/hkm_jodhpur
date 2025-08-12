@@ -259,7 +259,7 @@ export default function VolunteerCallToAction() {
             <h4 className="font-bold text-saffron mb-2">Email Us</h4>
             <p className="text-gray-300 text-sm">
               Send your questions and we'll respond quickly<br/>
-              volunteer@marwarmandir.org<br/>
+              volunteer@Marwadmandir.org<br/>
               Response within 24 hours
             </p>
           </div>

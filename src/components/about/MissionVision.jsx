@@ -60,7 +60,7 @@ export default function MissionVision() {
                 To spread the timeless teachings of Lord Krishna and provide a spiritual sanctuary where devotees can experience divine love, inner peace, and spiritual growth through the practice of bhakti yoga.
               </p>
               <p>
-                We strive to preserve and promote the rich cultural heritage of the Marwar region while fostering global consciousness of Krishna's universal message of love and compassion.
+                We strive to preserve and promote the rich cultural heritage of the Marwad region while fostering global consciousness of Krishna's universal message of love and compassion.
               </p>
             </div>
           </motion.div>
