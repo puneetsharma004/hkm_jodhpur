@@ -85,7 +85,7 @@ const Loader = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
-                className="text-gold text-2xl font-bold tracking-wider"
+                className="text-gold text-4xl font-bold tracking-wider"
               >
                 Welcome
               </motion.h2>
@@ -107,10 +107,10 @@ const Loader = () => {
               className="flex items-center justify-center"
             >
               <GiByzantinTemple className="text-saffron text-xl mr-2" />
-              <p className="text-white text-lg font-medium tracking-wide">
+              <p className="text-white text-2xl font-medium tracking-wide">
                 Hare Krishna Marwad Mandir
               </p>
-              <GiByzantinTemple className="text-saffron text-xl ml-2" />
+              <GiByzantinTemple className="text-saffron text-2xl ml-2" />
             </motion.div>
 
             {/* Loading Dots */}
