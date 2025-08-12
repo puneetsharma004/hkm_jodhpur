@@ -92,7 +92,7 @@ const Loader = () => {
                 transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
                 className="text-2xl text-gold mr-4"
               >
-                <GiLotusFlower />
+                <GiLotus/>
               </motion.div>
               
               <motion.h2
@@ -109,7 +109,7 @@ const Loader = () => {
                 transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
                 className="text-2xl text-gold ml-4"
               >
-                <GiLotusFlower />
+                <GiLotus/>
               </motion.div>
             </div>
 
