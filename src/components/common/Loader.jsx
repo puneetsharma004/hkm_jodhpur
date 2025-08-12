@@ -120,11 +120,11 @@ const Loader = () => {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="flex items-center justify-center"
             >
-              <GiTemple className="text-saffron text-xl mr-2" />
+              <GiByzantinTemple className="text-saffron text-xl mr-2" />
               <p className="text-white text-lg font-medium tracking-wide">
                 Hare Krishna Marwad Mandir
               </p>
-              <GiTemple className="text-saffron text-xl ml-2" />
+              <GiByzantinTemple className="text-saffron text-xl ml-2" />
             </motion.div>
 
             {/* Loading Dots */}
