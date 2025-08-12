@@ -1,31 +1,38 @@
-// Loader.js
+// Alternative Loader.js
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { GiLotus , GiByzantinTemple } from 'react-icons/gi';
-import { FaOm } from 'react-icons/fa';
+import { AnimatedText, FlipText, WaveText } from 'react-bits';
 
 const Loader = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const [currentStep, setCurrentStep] = useState(0);
 
   useEffect(() => {
-    const INACTIVITY_TIME = 10 * 60 * 1000; // 10 minutes
+    const INACTIVITY_TIME = 10 * 60 * 1000;
     
-    // Check conditions
     const hasVisited = sessionStorage.getItem('hasVisited');
     const lastActivity = localStorage.getItem('lastActivity');
     const now = Date.now();
     
-    // Show loader if first visit OR inactive for 10+ minutes
     if (!hasVisited || (lastActivity && (now - parseInt(lastActivity)) > INACTIVITY_TIME)) {
       setIsLoading(true);
       sessionStorage.setItem('hasVisited', 'true');
       
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 2500);
+      // Progressive text animation steps
+      const steps = [
+        () => setCurrentStep(1), // Welcome
+        () => setCurrentStep(2), // Temple name
+        () => setCurrentStep(3), // Complete
+      ];
+      
+      steps.forEach((step, index) => {
+        setTimeout(step, (index + 1) * 1000);
+      });
+      
+      setTimeout(() => setIsLoading(false), 4500);
     }
 
-    // Track activity
+    // Activity tracking code remains the same...
     const updateActivity = () => {
       localStorage.setItem('lastActivity', Date.now().toString());
     };
@@ -35,7 +42,6 @@ const Loader = () => {
       document.addEventListener(event, updateActivity, { passive: true });
     });
 
-    // Set initial activity
     updateActivity();
 
     return () => {
@@ -50,111 +56,69 @@ const Loader = () => {
       {isLoading && (
         <motion.div
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 1.2, ease: "easeInOut" } }}
-          className="fixed inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 z-50"
+          exit={{ opacity: 0, transition: { duration: 1.8, ease: "easeInOut" } }}
+          className="fixed inset-0 flex items-center justify-center bg-black z-50"
         >
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-10 left-10 text-6xl text-gold">
-              <GiLotus />
-            </div>
-            <div className="absolute top-20 right-16 text-4xl text-saffron">
-              <FaOm />
-            </div>
-            <div className="absolute bottom-20 left-20 text-5xl text-gold">
-              <GiByzantinTemple/>
-            </div>
-            <div className="absolute bottom-16 right-10 text-6xl text-saffron">
-              <GiLotus />
-            </div>
-          </div>
-
-          <div className="text-center relative z-10">
-            {/* Main Loading Icon */}
-            <motion.div
-              animate={{ 
-                rotate: 360,
-                scale: [1, 1.1, 1]
-              }}
-              transition={{ 
-                rotate: { repeat: Infinity, duration: 4, ease: "linear" },
-                scale: { repeat: Infinity, duration: 2, ease: "easeInOut" }
-              }}
-              className="text-8xl text-saffron mb-8 drop-shadow-2xl"
-            >
-              <FaOm />
-            </motion.div>
-
-            {/* Decorative Elements */}
-            <div className="flex items-center justify-center mb-6">
+          <div className="text-center relative z-10 max-w-3xl mx-auto px-8">
+            
+            {/* Step 1: Welcome */}
+            {currentStep >= 1 && (
               <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                className="text-2xl text-gold mr-4"
-              >
-                <GiLotus/>
-              </motion.div>
-              
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-                className="text-gold text-2xl font-bold tracking-wider"
+                className="mb-6"
               >
-                Welcome
-              </motion.h2>
-              
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                className="text-2xl text-gold ml-4"
-              >
-                <GiLotus/>
-              </motion.div>
-            </div>
-
-            {/* Temple Name */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-              className="flex items-center justify-center"
-            >
-              <GiByzantinTemple className="text-saffron text-xl mr-2" />
-              <p className="text-white text-lg font-medium tracking-wide">
-                Hare Krishna Marwad Mandir
-              </p>
-              <GiByzantinTemple className="text-saffron text-xl ml-2" />
-            </motion.div>
-
-            {/* Loading Dots */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.2 }}
-              className="flex justify-center mt-8 space-x-2"
-            >
-              {[0, 1, 2].map((i) => (
-                <motion.div
-                  key={i}
-                  animate={{
-                    y: [0, -10, 0],
-                    opacity: [0.5, 1, 0.5]
-                  }}
-                  transition={{
-                    repeat: Infinity,
-                    duration: 1.5,
-                    delay: i * 0.2,
-                    ease: "easeInOut"
-                  }}
-                  className="w-2 h-2 bg-gold rounded-full"
+                <WaveText
+                  text="Welcome to"
+                  className="text-5xl font-light text-amber-200 tracking-widest"
+                  delay={100}
                 />
-              ))}
-            </motion.div>
-          </div>
+              </motion.div>
+            )}
 
-          {/* Subtle Glow Effect */}
-          <div className="absolute inset-0 bg-gradient-radial from-saffron/5 via-transparent to-transparent pointer-events-none" />
+            {/* Step 2: Temple Name */}
+            {currentStep >= 2 && (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+                className="mb-8"
+              >
+                <FlipText
+                  text="Hare Krishna Marwad Mandir"
+                  className="text-4xl font-bold text-gradient bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-300 bg-clip-text text-transparent tracking-wide"
+                  duration={800}
+                />
+              </motion.div>
+            )}
+
+            {/* Step 3: Location */}
+            {currentStep >= 3 && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.8 }}
+                className="mb-12"
+              >
+                <AnimatedText
+                  text="Jodhpur • Blue City Heritage"
+                  className="text-xl text-slate-400 font-medium tracking-wider"
+                  animation="fadeInUp"
+                  staggerDelay={50}
+                />
+              </motion.div>
+            )}
+
+            {/* Minimalist loading bar */}
+            {currentStep >= 3 && (
+              <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: "200px" }}
+                transition={{ duration: 1.5, ease: "easeInOut" }}
+                className="h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto"
+              />
+            )}
+          </div>
         </motion.div>
       )}
     </AnimatePresence>
