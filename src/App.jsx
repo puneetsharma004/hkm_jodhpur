@@ -10,12 +10,25 @@ import Blog from './pages/Blog';
 import Volunteer from './pages/Volunteer';
 import Loader from './components/common/Loader';
 import Layout from './components/Layout.jsx';
+import ReactLenis from 'lenis/react';
 
 function App() {
 
   return (
     <Router>
       {/* Layout wraps everything - header, footer, announcement will show on all pages */}
+      <ReactLenis 
+      root 
+        options={{ 
+          lerp: 0.1,        // Smooth factor
+          duration: 1.2,    // Animation duration
+          orientation: 'vertical',
+          gestureOrientation: 'vertical',
+          smoothWheel: true,
+          wheelMultiplier: 1,
+          smoothTouch: false, // Keep mobile touch normal
+          touchMultiplier: 2,
+        }}>
       <Layout>
         {/* Loader can be conditionally shown based on loading state */}
         <Loader />
@@ -32,6 +45,7 @@ function App() {
           <Route path="/volunteer" element={<Volunteer />} />
         </Routes>
       </Layout>
+      </ReactLenis>
     </Router>
   );
 }
